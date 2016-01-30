@@ -1,24 +1,13 @@
-# WDI Novemner
-## Week 8: Testing
-
-### Day 1 
-
-#### Lecture 1: Test Driven Development
+# Week 8: Testing
 
 To install RSpec:
 
 ```bash
 $ gem install rspec
 
-```
+```  
 
-##### Our First Test
-
-Basic Ex.
-
-We would like to write a method that prints "Hello World" to terminal.   
-
-TDD Process
+## TDD Process
 
 1. Write a test to validate a piece of code you are going to write, run it - it should fail
 
@@ -31,10 +20,13 @@ TDD Process
 1. Make sure your test still passes, modify the test itself or add a new test if a new edge case has been added
 
 
-### RSpec
+## Resources
 [RSpec](http://rspec.info/)
+
 [Getting Started](https://www.relishapp.com/rspec/docs/gettingstarted)
+
 [RSpec Core](http://www.rubydoc.info/gems/rspec-core/frames)
+
 
 rspec init command generates a .rspec file and a spec folder with a spec_helper.rb file.
 
