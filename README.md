@@ -1,11 +1,8 @@
 # Week 8: Testing
-
-To install RSpec:
-
-```bash
-$ gem install rspec
-
-```  
+####Day 1: Intro to Testing
+TDD, BDD, and Ruby with RSpec
+####Day 2: Testing in Rails
+Testing models and factories
 
 ## TDD Process
 
@@ -19,6 +16,39 @@ $ gem install rspec
 
 1. Make sure your test still passes, modify the test itself or add a new test if a new edge case has been added
 
+### BDD is a subset of TDD
+
+## RSpec 
+
+To install RSpec:
+
+```bash
+$ gem install rspec
+
+```  
+
+### describe, context, and it
+
+#### describe block
+The describe block 
+ex. 
+
+```ruby
+describe "something" do
+
+```
+
+#### it block
+
+#### context block
+
+### expect().to
+
+
+### :each, :all
+
+### let
+
 
 ## Resources
 [RSpec](http://rspec.info/)
@@ -27,12 +57,12 @@ $ gem install rspec
 
 [RSpec Core](http://www.rubydoc.info/gems/rspec-core/frames)
 
+[RSpec Expectations](http://www.rubydoc.info/gems/rspec-expectations/frames)
 
-rspec init command generates a .rspec file and a spec folder with a spec_helper.rb file.
+[RSpec Guidelines](http://betterspecs.org/)
 
-```bash
-$ rspec --init
-```
+[Factory Girl - Rails](https://github.com/thoughtbot/factory_girl_rails)
+
 
 
 
