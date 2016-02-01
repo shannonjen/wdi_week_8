@@ -34,6 +34,7 @@ $ gem install rspec
 5. expect().to
 6. let
 
+
 1. The most basic RSpec structure is an it block embedded in a describe block. From RSpec's documentation: "Rspec uses the words 'describe' and 'it' so we can express concepts like a conversation". The describe block gives context (maybe a class, a feature, a method), while the it block is the actual test.   
 	ex. Testing the new class method (Array.new) and the count instance method (Array.new.count) of the Array class.
 	```ruby
@@ -94,10 +95,9 @@ $ gem install rspec
 4. Context blocks help organize cases. Think of it as a nested describe block.
 
 5. expect().to 
+[RSpec Expectations](http://www.rubydoc.info/gems/rspec-expectations/frames)
 
-
-6. The let keyword
-
+6. The let keyword 
 
 ## Resources
 [RSpec](http://rspec.info/)
