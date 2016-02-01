@@ -28,7 +28,7 @@ $ gem install rspec
 ```  
 ###RSpec Cheatsheet
 
-RSpec in a nutshell
+####RSpec 
 
 1. `describe, it`
 2. `before, after`
@@ -37,6 +37,7 @@ RSpec in a nutshell
 5. `expect().to`
 6. `let`
 
+####RSpec in a nutshell 
 
 1. The most basic RSpec structure is an **it** block embedded in a **describe** block. From RSpec's documentation: "Rspec uses the words 'describe' and 'it' so we can express concepts like a conversation". The describe block gives context (maybe a class, a feature, a method), while the it block is the actual test.   
 	ex. Testing the new class method (Array.new) and the count instance method (Array.new.count) of the Array class.
