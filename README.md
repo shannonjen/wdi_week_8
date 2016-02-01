@@ -26,28 +26,77 @@ To install RSpec:
 $ gem install rspec
 
 ```  
+###RSpec Cheatsheet
+1. describe, it
+2. before, after
+3. :each, :all
+4. context
+5. expect().to
+6. let
 
-### describe, context, and it
+1. The most basic RSpec structure is an it block embedded in a describe block. From RSpec's documentation: "Rspec uses the words 'describe' and 'it' so we can express concepts like a conversation". The describe block gives context (maybe a class, a feature, a method), while the it block is the actual test.   
+	ex. Testing the new class method (Array.new) and the count instance method (Array.new.count) of the Array class.
+	```ruby
+	describe Array do
+		it ".new should return a blank instance" do
+			expect(Array.new).to eq([])
+		end
+		it "should allow you to #count the items in the instance" do
+			expect(Array.new.count).to eq(0)
+		end
+	end
 
-#### describe block
-The describe block 
-ex. 
+	```
+2. Before and after directives "hook in" before or after each test.
+	ex. Create an instance of Array before each test
+	```ruby
+	describe Array do
+		before do
+			@array = Array.new
+		end
 
-```ruby
-describe "something" do
+		it ".new should return a blank instance" do
+			expect(@array).to eq([])
+		end
 
-```
+		it "should allow you to #count the items in the instance" do
+			expect(@array.count).to eq(0)
+		end
 
-#### it block
+		after do
+			puts "Test complete"
+		end
+	end
 
-#### context block
+	```	
+3. before and after blocks can take an :all or :each argument. :each is default. :all argument means the before block is run once.
+	ex. Create an instance of Array before all tests are run.
+	```ruby
+	describe Array do
+		before(:all) do
+			@array = Array.new
+		end
 
-### expect().to
+		it ".new should return a blank instance" do
+			expect(@array).to eq([])
+		end
+
+		it "should allow you to #count the items in the instance" do
+			expect(@array.count).to eq(0)
+		end
+
+		after do
+			puts "Test complete"
+		end
+	end
+
+	```	
+4. Context blocks help organize cases. Think of it as a nested describe block.
+
+5. expect().to 
 
 
-### :each, :all
-
-### let
+6. The let keyword
 
 
 ## Resources
